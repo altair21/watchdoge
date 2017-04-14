@@ -1,0 +1,32 @@
+{
+  "name": "watchdoge",
+  "bin": {
+    "watchdoge": "lib/index.js"
+  },
+  "version": "0.1.1",
+  "description": "A simple CLI tool watching command line execute result for you.",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "nodemailer": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/altair21/watchdoge.git"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "altair21",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/altair21/watchdoge/issues"
+  },
+  "homepage": "https://github.com/altair21/watchdoge#readme"
+}
