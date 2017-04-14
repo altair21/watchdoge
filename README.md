@@ -28,7 +28,7 @@ After configuring your email address, you can just run any command wrapped with 
 ## Further
 
 - All your config is store in `~/.watchdogerc`, it is a JSON format file. You can edit this file by yourself, just keep JSON format.
-- `qq` email and `163` email is preset, you can add other email by configuring `host` with email server address, `port` with email **ssl** protocol port, for example `qq`, `service` with `none`, for example Gmail:
+- `qq` email and `163` email is preset, you can add other email by configuring `host` with email server address, `port` with email **ssl** protocol port, `service` with `none`, for example Gmail:
   - `watchdoge config service none`
   - `watchdoge config host smtp.gmail.com`
   - `watchdoge config port 465`
