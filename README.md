@@ -1,4 +1,9 @@
 # watchdoge
+
+[![](https://travis-ci.org/altair21/watchdoge.svg?branch=master)](https://github.com/altair21/watchdoge)
+[![npm version](https://badge.fury.io/js/watchdoge.svg)](https://badge.fury.io/js/watchdoge)
+[![](https://img.shields.io/npm/l/watchdoge.svg)](https://github.com/altair21/watchdoge/blob/master/LICENSE)
+
 A simple CLI tool watching command line execute result for you.
 
 ![](https://ws1.sinaimg.cn/large/9ce43335gy1femb4iywslj20go0go0tr.jpg)
@@ -20,7 +25,7 @@ After configuring your email address, you can just run any command wrapped with 
 4. `watchdoge config mode all`. `mode` config has 3 valid value, **default is `end`**, you will receive one email with entire output when command execute finish. If you set `all`, you will receive email with output everytime terminal has stdout or stderr, and one email when command execute finish. If you set `err`, you will receive email with output everytime terminal has stderr, and one email when command execute finish.
 5. you can run any command wrapped with `watchdoge`, for example `watchdoge ls`, `watchdoge ping -c 10 www.bing.com`.
 
-## Futher
+## Further
 
 - All your config is store in `~/.watchdogerc`, it is a JSON format file. You can edit this file by yourself, just keep JSON format.
 - `qq` email and `163` email is preset, you can add other email by configuring `host` with email server address, `port` with email **ssl** protocol port, for example `qq`, `service` with `none`, for example Gmail:
@@ -31,3 +36,4 @@ After configuring your email address, you can just run any command wrapped with 
 ## LICENSE
 
 [MIT LICENSE](https://github.com/altair21/watchdoge/blob/master/LICENSE)
+
