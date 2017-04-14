@@ -3,7 +3,7 @@
   "bin": {
     "watchdoge": "lib/index.js"
   },
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "A simple CLI tool watching command line execute result for you.",
   "main": "lib/index.js",
   "directories": {
