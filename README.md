@@ -1,7 +1,7 @@
 # watchdoge
 
-[![](https://travis-ci.org/altair21/watchdoge.svg?branch=master)](https://github.com/altair21/watchdoge)
-[![npm version](https://badge.fury.io/js/watchdoge.svg)](https://badge.fury.io/js/watchdoge)
+[![](https://travis-ci.org/altair21/watchdoge.svg?branch=master)](https://travis-ci.org/altair21/watchdoge)
+[![npm version](https://img.shields.io/npm/v/watchdoge.svg)](https://www.npmjs.com/package/watchdoge)
 [![](https://img.shields.io/npm/l/watchdoge.svg)](https://github.com/altair21/watchdoge/blob/master/LICENSE)
 
 A simple CLI tool watching command line execute result for you.
