@@ -3,14 +3,15 @@
   "bin": {
     "watchdoge": "lib/index.js"
   },
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A simple CLI tool watching command line execute result for you.",
   "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "nodemailer": "^4.0.0"
+    "nodemailer": "^2.7.2",
+    "os-homedir": "^1.0.2"
   },
   "devDependencies": {
     "mocha": "^3.2.0",
