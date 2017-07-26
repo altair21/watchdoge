@@ -22,19 +22,20 @@ After configuring your email address, you can just run any command wrapped with 
 1. `watchdoge config email xxx@xx.xx`
 2. `watchdoge config password xxxx`
 3. `watchdoge config service qq`. As Gmail has so many authorization to access, watchdoge only support `qq` email and `163` email by now. **default `service` is `qq`**.
-4. `watchdoge config mode all`. Property `mode` has 3 valid value:
-  - `end`(**default**): you will only receive one email with entire output when command execute finish.
-  - `all`: you will receive email with output everytime terminal has stdout or stderr, and one email when command execute finish.
-  - `error`: you will receive email with output everytime terminal has stderr, and one email when command execute finish.
+4. `watchdoge config mode all`. 
+  - Property `mode` has 3 valid value:
+    - `end`(**default**): you will only receive one email with entire output when command execute finish.
+    - `all`: you will receive email with output everytime terminal has stdout or stderr, and one email when command execute finish.
+    - `error`: you will receive email with output everytime terminal has stderr, and one email when command execute finish.
 5. you can run any command wrapped with `watchdoge`, for example `watchdoge ls`, `watchdoge ping -c 10 www.bing.com`.
 
 ## Further
 
 - All your config is store in `~/.watchdogerc`, it is a JSON format file. You can edit this file by yourself, just keep JSON format.
 - `qq` email and `163` email is preset, you can add other email by configuring `host` with email server address, `port` with email **ssl** protocol port, `service` with `none`, for example Gmail:
-  - `watchdoge config service none`
-  - `watchdoge config host smtp.gmail.com`
-  - `watchdoge config port 465`
+    - `watchdoge config service none`
+    - `watchdoge config host smtp.gmail.com`
+    - `watchdoge config port 465`
 
 ## LICENSE
 
