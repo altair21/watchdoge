@@ -33,7 +33,13 @@ const getConfig = (key) => {
 
 const configure = (key, value) => {
   const obj = readConfig() || {};
-  obj[key] = key === 'password' ? encrypt(value) : value;
+  if (key === 'password') {
+    obj[key] = encrypt(value);
+  } else if (key === 'mode') {
+    obj[key] = `${value}`.toLocaleUpperCase();
+  } else {
+    obj[key] = value;
+  }
   fs.writeFileSync(configurationPath, JSON.stringify(obj));
 };
 
