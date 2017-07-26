@@ -22,7 +22,10 @@ After configuring your email address, you can just run any command wrapped with 
 1. `watchdoge config email xxx@xx.xx`
 2. `watchdoge config password xxxx`
 3. `watchdoge config service qq`. As Gmail has so many authorization to access, watchdoge only support `qq` email and `163` email by now. **default `service` is `qq`**.
-4. `watchdoge config mode all`. `mode` config has 3 valid value, **default is `end`**, you will receive one email with entire output when command execute finish. If you set `all`, you will receive email with output everytime terminal has stdout or stderr, and one email when command execute finish. If you set `err`, you will receive email with output everytime terminal has stderr, and one email when command execute finish.
+4. `watchdoge config mode all`. Property `mode` has 3 valid value:
+  - `end`(**default**): you will only receive one email with entire output when command execute finish.
+  - `all`: you will receive email with output everytime terminal has stdout or stderr, and one email when command execute finish.
+  - `error`: you will receive email with output everytime terminal has stderr, and one email when command execute finish.
 5. you can run any command wrapped with `watchdoge`, for example `watchdoge ls`, `watchdoge ping -c 10 www.bing.com`.
 
 ## Further
