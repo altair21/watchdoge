@@ -21,6 +21,8 @@ const ordinalNumber = (n) => {
 
 const timestamp = () => (new Date()).getTime();
 
+const hr = () => '=================================================<br>';
+
 const timestampDuration = (st, et) => {
   const seconds = parseFloat(((et - st) / 1000).toFixed(0));
   const h = Math.floor(seconds / 3600);
@@ -35,11 +37,11 @@ const genSubject = mode => `${mode} watchdoge notice`;
 
 const genContent = (command, output, index, type, isEnd, exception) => {
   const durationP = `<p>Total execute time: ${timestampDuration(startTime, timestamp())}</p>`;
-  let res = '<strong>This is a auto send message by watchdoge </strong><hr>';
-  res += `<p>Your command: <pre>${command}</pre></p></hr>`;
+  let res = `<strong>This is an auto send message by watchdoge </strong><br>${hr()}`;
+  res += `<p>Your command: <pre>${command}</pre></p>${hr()}`;
   if (exception) {
     res += '<p><strong><font color="red">There has an exception when running command: </font></strong>';
-    res += `<pre><font color='red'>${exception}</font></pre></p><hr>`;
+    res += `<pre><font color='red'>${exception}</font></pre></p>${hr()}`;
     res += durationP;
     return res;
   }
@@ -57,11 +59,11 @@ const genContent = (command, output, index, type, isEnd, exception) => {
     } else {
       res += '<p>Command has executed finished!';
     }
-    res += '</p><hr>';
+    res += `</p>${hr()}`;
     res += durationP;
     return res;
   }
-  res += `<p>This is ${ordinalNumber(index)} output`;
+  res += `<p>This is <strong>${ordinalNumber(index)}</strong> output`;
   if (type === OutputType.stdout) {
     res += '(stdout)';
     res += `<pre>${output}</pre>`;
@@ -72,7 +74,7 @@ const genContent = (command, output, index, type, isEnd, exception) => {
     res += '<font color="blue">(UNKNOWN)</font>';
     res += `<pre>${output}</pre>`;
   }
-  res += '</p><hr>';
+  res += `</p>${hr()}`;
   res += durationP;
   return res;
 };
